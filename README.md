@@ -1,5 +1,5 @@
 Вариант 1
-====
+==
 ```javascript
 $('.days').russian();  
 ```
@@ -17,8 +17,8 @@ $('.days').russian();
 2 дня
 ```
 
-Вариант 1
-====
+Вариант 2
+==
 
 ```javascript
 $('span.guest').russian({one: "гость", several:"гостя", many: "гостей"});
