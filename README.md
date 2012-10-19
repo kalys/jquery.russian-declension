@@ -7,14 +7,14 @@ $('.days').russian();
 ```html
 <div class="days" data-one="день" data-several="дня" data-many="дней">7</div>
 <div class="days" data-one="день" data-several="дня" data-many="дней">1</div>
-<div class="days" data-one="день" data-several="дня" data-many="дней">0</div>
+<div class="days" data-one="день" data-several="дня" data-many="дней">2</div>
 ```
 
 Вывод
 ```
 7 дней
 1 день
-0 дней
+2 дня
 ```
 
 Вариант 1
