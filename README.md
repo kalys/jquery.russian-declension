@@ -1,7 +1,7 @@
 Вариант 1
 ==
 ```javascript
-$('.days').russian();  
+$('.days').russian_declension();  
 ```
 
 ```html
@@ -21,7 +21,7 @@ $('.days').russian();
 ==
 
 ```javascript
-$('span.guest').russian({one: "гость", several:"гостя", many: "гостей"});
+$('span.guest').russian_declension({one: "гость", several:"гостя", many: "гостей"});
 ```
 
 ```html
@@ -38,3 +38,13 @@ $('span.guest').russian({one: "гость", several:"гостя", many: "гос�
 Ложек хватало только на 4 гостя. 21 гость остался без ложек.
 ```
 
+Вариант 3
+==
+
+Укажите аттрибут data-rudecle.
+
+```html
+<p>
+    <span data-rudecle data-one="гость остался" data-several="гостя остались" data-many="гостeй остались">21</span>.
+</p>
+```
