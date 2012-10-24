@@ -1,6 +1,6 @@
 ;(function ( $, window, undefined ) {
 
-    var pluginName = 'russian',
+    var pluginName = 'russian_declension',
         document = window.document,
         defaults = {
             one: "",
@@ -45,5 +45,10 @@
             }
         });
     };
+
+
+    $(window).on('load', function() {
+        $('[data-rudecle]').russian_declension()
+    });
 
 }(jQuery, window));
