@@ -5,7 +5,8 @@
         defaults = {
             one: "",
             several: "",
-            many: ""
+            many: "",
+            zero: ""
         };
 
     function Plugin( element, options ) {
@@ -29,8 +30,17 @@
             }
         }
 
-        var title = this.pluralize( parseInt($(this.element).html()), titles);
-        $(this.element).append(" " + title);
+        var number = parseInt($(this.element).html());
+        var zero_title = this.options['zero'] || $(this.element).data('zero');
+        console.log(zero_title);
+
+        var title = this.pluralize(number, titles);
+
+        if (number == 0 && zero_title) {
+          $(this.element).html(zero_title);
+        } else {
+          $(this.element).html(number + " " + title);
+        }
     };
 
     Plugin.prototype.pluralize = function(number, titles) {

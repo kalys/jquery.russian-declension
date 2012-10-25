@@ -5,7 +5,7 @@
         <script type="text/javascript">
             jQuery(document).ready( function($) {
                 $('.days').russian_declension();
-                $('span.guest').russian_declension({one: "гость", several:"гостя", many: "гостей"});
+                $('span.guest').russian_declension({zero: "Ни один гость", one: "гость", several:"гостя", many: "гостей"});
             });
         </script>
     </head>
@@ -21,7 +21,17 @@
         <p>
             Стол накрыт на <span class="guest">25</span>. <br />
             Ложек хватало только на <span class="guest">4</span>.
-            <span data-rudecle data-one="гость остался" data-several="гостя остались" data-many="гостeй остались">21</span> без ложек.
+            <span data-rudecle data-one="гость остался" data-several="гостя остались" data-many="гостeй остались">21</span> без ложек.<br />
+            <span class="guest">0</span> не обратил внимание, потому что они ели бешбармак.
         </p>
+
+        <div>
+            <span data-rudecle data-zero="Нет пропущенных звонков" data-one="пропущенный звонок" data-several="пропущенных звонка" data-many="пропущенных звонков">0</span>.<br />
+            <span data-rudecle data-zero="Нет пропущенных звонков" data-one="пропущенный звонок" data-several="пропущенных звонка" data-many="пропущенных звонков">1</span>.<br />
+            <span data-rudecle data-zero="Нет пропущенных звонков" data-one="пропущенный звонок" data-several="пропущенных звонка" data-many="пропущенных звонков">5</span>.<br />
+            <span data-rudecle data-zero="Нет пропущенных звонков" data-one="пропущенный звонок" data-several="пропущенных звонка" data-many="пропущенных звонков">10</span>.<br />
+            <span data-rudecle data-zero="Нет пропущенных звонков" data-one="пропущенный звонок" data-several="пропущенных звонка" data-many="пропущенных звонков">11</span>.<br />
+            <span data-rudecle data-zero="Нет пропущенных звонков" data-one="пропущенный звонок" data-several="пропущенных звонка" data-many="пропущенных звонков">20</span>.<br />
+        </div>
     </body>
 </html>
