@@ -32,7 +32,6 @@
 
         var number = parseInt($(this.element).html());
         var zero_title = this.options['zero'] || $(this.element).data('zero');
-        console.log(zero_title);
 
         var title = this.pluralize(number, titles);
 
