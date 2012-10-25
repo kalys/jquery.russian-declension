@@ -29,7 +29,7 @@
             }
         }
 
-        var title = this.pluralize( $(this.element).html(), titles);
+        var title = this.pluralize( parseInt($(this.element).html()), titles);
         $(this.element).append(" " + title);
     };
 
