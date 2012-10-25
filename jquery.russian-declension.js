@@ -31,8 +31,12 @@
         }
 
         var number = parseInt($(this.element).html());
-        var zero_title = this.options['zero'] || $(this.element).data('zero');
 
+        if (!number) {
+          number = 0;
+        }
+
+        var zero_title = this.options['zero'] || $(this.element).data('zero');
         var title = this.pluralize(number, titles);
 
         if (number == 0 && zero_title) {
